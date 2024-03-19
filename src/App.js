@@ -4,21 +4,23 @@ function App() {
   
   return (
     <div className="App">
-     <User name="Manish" age={21} gmail="manish@gmail.com"/>
-     <User name="Manish" age={21} gmail="manish@gmail.com"/>
+     <Jobs salary={9000} position="SDE" company="Google"/>
+     <Jobs salary={100000} position="SDE" company="Microsoft"/>
+     <Jobs salary={1500000} position="SDE" company="Meta"/>
+     
     </div>
-  )
+  );
 };
 
 
-const User=(props)=>{
+const Jobs=(props)=>{
  return( <div>
-          <h1>{props.name}</h1>
-          <h1>{props.age}</h1>
-          <h1>{props.gmail}</h1>
+          <h1>{props.salary}</h1>
+          <h1>{props.position}</h1>
+          <h1>{props.company}</h1>
           </div> 
           
-       )
+       );
 };
 
 
